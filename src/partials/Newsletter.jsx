@@ -22,7 +22,7 @@ function Newsletter() {
             data-aos="zoom-y-out"
           >
             <div className="grid grid-cols-2 ">
-              <div className="col-span-1">
+              <div className="col-span-2">
                 {/* Background illustration */}
 
                 <div
@@ -42,7 +42,7 @@ function Newsletter() {
                       <div className="flex mb-4 flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
                         <input
                           type="email"
-                          className="form-input w-full appearance-none bg-gray-300 border border-gray-400 focus:border-gray-400 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 ext-dark placeholder-white"
+                          className="form-input w-full appearance-none bg-gray-300 border border-gray-400 focus:border-gray-400 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 ext-dark placeholder-black"
                           placeholder="Your Name..."
                           aria-label="Your email…"
                         />
@@ -78,10 +78,10 @@ function Newsletter() {
                   </div>
                 </div>
               </div>
-              <div className="col-span-1">
+              {/* <div className="col-span-1">
                 {" "}
                 <Lottie options={defaultOptions} height={200} width={200} />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
