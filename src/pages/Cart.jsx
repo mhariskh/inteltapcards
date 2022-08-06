@@ -71,6 +71,7 @@ function Cart() {
                   <p className="text-5xl font-black leading-10 text-gray-800 pt-3">
                     Bag
                   </p>
+
                   {cart.map((prod) => (
                     <div className="md:flex items-center mt-14 py-8 border-t border-gray-200">
                       <div className="w-1/4">
@@ -128,6 +129,16 @@ function Cart() {
                       </div>
                     </div>
                   ))}
+                  {cart.length === 0 && (
+                    <>
+                      {" "}
+                      <div className="md:flex items-center mt-14 py-8 border-t border-gray-200">
+                        <p className="text-2xl leading-normal text-gray-800">
+                          The cart is empty. Please go back.
+                        </p>
+                      </div>
+                    </>
+                  )}
                 </div>
                 <div className="xl:w-1/2 md:w-1/3 xl:w-1/4 w-full bg-gray-100 h-full">
                   <div className="flex flex-col md:h-screen px-14 py-20 justify-between overflow-y-auto">
@@ -169,9 +180,11 @@ function Cart() {
                           PKR {total}
                         </p>
                       </div>
-                      <button className="text-base leading-none w-full py-5 bg-gray-800 border-gray-800 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white">
-                        Checkout
-                      </button>
+                      <Link to="/checkout">
+                        <button className="text-base leading-none w-full py-5 bg-gray-800 border-gray-800 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white">
+                          Proceed to Checkout
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

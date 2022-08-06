@@ -16,7 +16,7 @@ const itcProducts = [
   },
   {
     id: 2,
-    name: "Intel Tap customized cardasd",
+    name: "Intel Tap customized card",
     originalPrice: "PKR 1499",
     discountPrice: 1199,
     designType: "Premium",

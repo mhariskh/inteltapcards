@@ -57,8 +57,8 @@ const Nav = () => {
 
           <li key="cart" className="md:ml-8 text-xl md:my-0 my-6">
             <Link to="/cart">
-              <i class="fa fa-shopping-cart fa-2x"></i>
-              <span class="ml-5">{cart.length}</span>
+              <i className="fa fa-shopping-cart fa-2x"></i>
+              <span className="ml-5">{cart.length}</span>
             </Link>
           </li>
         </ul>

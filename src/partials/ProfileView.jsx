@@ -41,7 +41,7 @@ const ProfileView = () => {
               <div className="relative mt-4 mb-4 flex flex-col flex-1 w-64 items-left ">
                 <p className="text-black-800 flex-1 w-64 text-left text-lg">
                   <i
-                    class="fa  fa-check-circle-o fa-1x mr-2 "
+                    className="fa  fa-check-circle-o fa-1x mr-2 "
                     style={{ color: "#2194ff" }}
                     aria-hidden="true"
                   ></i>
@@ -49,7 +49,7 @@ const ProfileView = () => {
                 </p>
                 <p className="text-black-800  text-left text-lg">
                   <i
-                    class="fa  fa-check-circle-o fa-1x mr-2 "
+                    className="fa  fa-check-circle-o fa-1x mr-2 "
                     style={{ color: "#2194ff" }}
                     aria-hidden="true"
                   ></i>
@@ -57,7 +57,7 @@ const ProfileView = () => {
                 </p>
                 <p className="text-black-800  text-left text-lg">
                   <i
-                    class="fa  fa-check-circle-o fa-1x mr-2 "
+                    className="fa  fa-check-circle-o fa-1x mr-2 "
                     style={{ color: "#2194ff" }}
                     aria-hidden="true"
                   ></i>
@@ -65,7 +65,7 @@ const ProfileView = () => {
                 </p>
                 <p className="text-black-800  text-left text-lg">
                   <i
-                    class="fa  fa-check-circle-o fa-1x mr-2 "
+                    className="fa  fa-check-circle-o fa-1x mr-2 "
                     style={{ color: "#2194ff" }}
                     aria-hidden="true"
                   ></i>
@@ -73,7 +73,7 @@ const ProfileView = () => {
                 </p>
                 <p className="text-black-800  text-left text-lg">
                   <i
-                    class="fa  fa-check-circle-o fa-1x mr-2 "
+                    className="fa  fa-check-circle-o fa-1x mr-2 "
                     style={{ color: "#2194ff" }}
                     aria-hidden="true"
                   ></i>
@@ -82,7 +82,7 @@ const ProfileView = () => {
                 <p className="text-black-800  text-left text-lg">
                   {" "}
                   <i
-                    class="fa  fa-check-circle-o fa-1x mr-2 "
+                    className="fa  fa-check-circle-o fa-1x mr-2 "
                     style={{ color: "#2194ff" }}
                     aria-hidden="true"
                   ></i>
