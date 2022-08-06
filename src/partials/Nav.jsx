@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAtlassian } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Link, useLocation } from "react-router-dom";
 import imageNavbar from "../images/logo-in-gold.png";
 import { CartState } from "../context/Context";
-
+import "./cartStyles.css";
 const Nav = () => {
   const {
     state: { cart },
+    dispatch,
+    productDispatch,
   } = CartState();
   const Links = [
     { name: "Home", link: "/" },
@@ -19,15 +22,13 @@ const Nav = () => {
   ];
 
   const [Open, setOpen] = useState(false);
+  const [cartDropDown, setCartDropDown] = useState(false);
 
   return (
-    <div
-      className="fixed w-full z-30 bg-white backdrop-blur-sm shadow-lg md:shadow-sm top-0 left-0 w-full"
-      style={{ overflow: "none" }}
-    >
+    <div className="fixed w-full z-30 bg-white backdrop-blur-sm shadow-lg md:shadow-sm top-0 left-0 w-full">
       <div
         className=" md:flex bg-white text-black   items-center justify-between  md:px-5 px-7"
-        style={{ paddingTop: "30px", paddingBottom: "30px", overflow: "none" }}
+        style={{ paddingTop: "30px", paddingBottom: "30px" }}
       >
         <div className="font-bold ml-4 text-2xl cursor-pointer flex items-center font-sans">
           <p className="text-3xl mr-2"></p>
@@ -55,10 +56,10 @@ const Nav = () => {
           ))}
 
           <li key="cart" className="md:ml-8 text-xl md:my-0 my-6">
-            <a href="" className="hover:text-gray-500 duration-100">
+            <Link to="/cart">
               <i class="fa fa-shopping-cart fa-2x"></i>
               <span class="ml-5">{cart.length}</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
