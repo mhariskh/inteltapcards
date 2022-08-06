@@ -21,10 +21,13 @@ const Nav = () => {
   const [Open, setOpen] = useState(false);
 
   return (
-    <div className="fixed w-full z-30 bg-white backdrop-blur-sm shadow-lg md:shadow-sm top-0 left-0 w-full">
+    <div
+      className="fixed w-full z-30 bg-white backdrop-blur-sm shadow-lg md:shadow-sm top-0 left-0 w-full"
+      style={{ overflow: "none" }}
+    >
       <div
         className=" md:flex bg-white text-black   items-center justify-between  md:px-5 px-7"
-        style={{ paddingTop: "30px", paddingBottom: "30px" }}
+        style={{ paddingTop: "30px", paddingBottom: "30px", overflow: "none" }}
       >
         <div className="font-bold ml-4 text-2xl cursor-pointer flex items-center font-sans">
           <p className="text-3xl mr-2"></p>
