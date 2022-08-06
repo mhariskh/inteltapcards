@@ -3,14 +3,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAtlassian } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import imageNavbar from "../images/logo-in-gold.png";
+import { CartState } from "../context/Context";
 
 const Nav = () => {
+  const {
+    state: { cart },
+  } = CartState();
   const Links = [
     { name: "Home", link: "/" },
-    { name: "Service", link: "/" },
-    { name: "About", link: "/" },
-    { name: "Blog", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: "Product", link: "/" },
+    { name: "Shop", link: "#shop" },
+    { name: "Benefits", link: "/" },
+    { name: "Features", link: "/" },
+    { name: "Contact Us", link: "/cart" },
   ];
 
   const [Open, setOpen] = useState(false);
@@ -45,6 +50,13 @@ const Nav = () => {
               </a>
             </li>
           ))}
+
+          <li key="cart" className="md:ml-8 text-xl md:my-0 my-6">
+            <a href="" className="hover:text-gray-500 duration-100">
+              <i class="fa fa-shopping-cart fa-2x"></i>
+              <span class="ml-5">{cart.length}</span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
