@@ -48,7 +48,7 @@ function Home() {
                 </p>
               </div>
 
-              <div className=" grid grid-cols-4 gap-4">
+              <div className=" grid grid-cols-2 gap-4">
                 {products.map((prod) => {
                   return (
                     <SingleProduct prod={prod} key={prod.id}></SingleProduct>
