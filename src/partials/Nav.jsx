@@ -14,9 +14,9 @@ const Nav = () => {
   } = CartState();
   const Links = [
     { name: "Home", link: "/" },
-    { name: "Product", link: "/" },
+    { name: "Product", link: "#product" },
     { name: "Shop", link: "#shop" },
-    { name: "Benefits", link: "/" },
+    { name: "Benefits", link: "#benefits" },
     { name: "Features", link: "#featuresBlocks" },
     { name: "Contact Us", link: "#contactUs" },
   ];
