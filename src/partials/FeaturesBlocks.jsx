@@ -4,7 +4,7 @@ import featureImage from "../images/My-Post-24-min.png";
 function FeaturesBlocks() {
   return (
     <>
-      <section className="relative" id="featuresBlocks">
+      <section className="relative" id="benefits">
         {/* Section background (needs .relative class on parent and next sibling elements) */}
         <div
           className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-100 pointer-events-none"
@@ -122,7 +122,7 @@ function FeaturesBlocks() {
         </div>
       </section>
 
-      <section className="relative">
+      <section className="relative" id="featuresBlocks">
         {/* Section background (needs .relative class on parent and next sibling elements) */}
         <div
           className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-100 pointer-events-none"
