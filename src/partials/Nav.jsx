@@ -18,7 +18,7 @@ const Nav = () => {
     { name: "Shop", link: "#shop" },
     { name: "Benefits", link: "/" },
     { name: "Features", link: "/" },
-    { name: "Contact Us", link: "/cart" },
+    { name: "Contact Us", link: "#contactUs" },
   ];
 
   const [Open, setOpen] = useState(false);
